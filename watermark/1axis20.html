@@ -9,7 +9,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <title>Demo</title>
+    <title>KeyShotXR</title>
     <style type="text/css">
       p {text-align: center;}
       .centerDiv
@@ -21,13 +21,13 @@
 }
       body { -ms-touch-action: none; }
     </style>
-    <script type="text/javascript" src="Trophy_800x420_20frames_zoom/files/KeyShotXR.js"></script>
+    <script type="text/javascript" src="files/KeyShotXR.js"></script>
     <script type="text/javascript">
       var keyshotXR;
 
       function initKeyShotXR() {
         var nameOfDiv = "KeyShotXR";
-        var folderName = "Trophy_800x420_20frames_zoom";
+        var folderName = "1axis20";
         var viewPortWidth = 800;
         var viewPortHeight = 420;
         var backgroundColor = "#FFFFFF";
@@ -40,13 +40,13 @@
         var uStartIndex = 10;
         var vStartIndex = 0;
         var minZoom = 1;
-        var maxZoom = 3;
+        var maxZoom = 1;
         var rotationDamping = 0.96;
         var downScaleToBrowser = true;
         var addDownScaleGUIButton = false;
         var downloadOnInteraction = false;
-        var imageExtension = "png";
-        var showLoading = false;
+        var imageExtension = "jpg";
+        var showLoading = true;
         var loadingIcon = "ks_logo.png"; // Set to empty string for default icon.
         var allowFullscreen = true; // Double-click in desktop browsers for fullscreen.
         var uReverse = false;
@@ -61,7 +61,9 @@
     </script>
   </head>
   <body oncontextmenu="return false;">
+
     <div id="KeyShotXR" class="centerDiv"></div>
-    <p>Click, Move & Scroll Cursor to reveal animation</p>
+    <div><p>1 AXIS Watermark</p></div>
+
   </body>
 </html>
