@@ -11,6 +11,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title>KeyShotXR</title>
     <style type="text/css">
+      .centerDiv
+{
+  width: 60%;
+  height:200px;
+  margin: 0 auto;
+  background-color:#FFA500 ;
+}
       body { -ms-touch-action: none; }
     </style>
     <script type="text/javascript" src="Trophy_XR.22/files/KeyShotXR.js"></script>
@@ -45,7 +52,7 @@
         var vReverse = false;
         var hotspots = {};
         var isIBooksWidget = false;
-        
+
         keyshotXR = new keyshotXR(nameOfDiv,folderName,viewPortWidth,viewPortHeight,backgroundColor,uCount,vCount,uWrap,vWrap,uMouseSensitivity,vMouseSensitivity,uStartIndex,vStartIndex,minZoom,maxZoom,rotationDamping,downScaleToBrowser,addDownScaleGUIButton,downloadOnInteraction,imageExtension,showLoading,loadingIcon,allowFullscreen,uReverse,vReverse,hotspots,isIBooksWidget);
       }
 
@@ -53,6 +60,6 @@
     </script>
   </head>
   <body oncontextmenu="return false;">
-    <div id="KeyShotXR"></div>
+    <div id="KeyShotXR" class="centerDiv"></div>
   </body>
 </html>
